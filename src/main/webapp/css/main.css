@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.tictak_container {
+    text-align: center;
+}
+
+#tictak_table {
+    display: inline-table;
+    margin-top: 20%;
+}
+
+.tictak_cell {
+    width: 60px;
+    height: 60px;
+    background-color: #dee;
+    font: 26px/26px Arial, Helvetica, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
