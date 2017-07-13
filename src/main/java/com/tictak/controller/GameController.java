@@ -1,7 +1,7 @@
-package com.tictak;
+package com.tictak.controller;
 
 import com.google.gson.Gson;
-import com.tictak.model.Board;
+import com.tictak.model.BoardMock;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,7 +20,7 @@ public class GameController {
 
     @PostMapping("/board")
     public ResponseEntity<?> getSearchResultViaAjax(@RequestBody String search, Errors errors) {
-        Board board = new Board();
+        BoardMock board = new BoardMock();
         Gson gson = new Gson();
         String result = gson.toJson(board);
         if (errors.hasErrors()) {
